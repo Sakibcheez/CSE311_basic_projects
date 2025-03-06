@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Food Website</h1>
+    </header>
+
+    <main>
+        <section class="food-form">
+            <h2>Add a New Food Item</h2>
+            <form action="add_food.php" method="POST">
+                <label for="food_name">Food Name:</label>
+                <input type="text" id="food_name" name="food_name" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+
+                <button type="submit">Add Food</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Food Website</p>
+    </footer>
+</body>
+</html>
